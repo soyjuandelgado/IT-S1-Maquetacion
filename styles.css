@@ -5,6 +5,17 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     /*background-color: blue;*/
 }
+p{
+    color: grey;
+}
+
+button{
+    background-color: dodgerblue;
+    padding: 20px;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+}
 
 nav{
     display: flex;
@@ -29,4 +40,25 @@ main section{
 .features_list{
     display: flex;
     flex-direction: column;
+}
+.preguntas{
+    text-align: left;
+}
+.pregunta p{
+    display: none;
+}
+
+.browser{
+    margin: 20px;
+    padding: 20px;
+    border: 1px;
+    box-shadow: 0 4px 12px rgb(190, 190, 190);
+    border-radius: 15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
 }
