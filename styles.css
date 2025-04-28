@@ -6,11 +6,11 @@ body{
     /*background-color: blue;*/
 }
 p{
-    color: grey;
+    color: #97979f;
 }
 
 button{
-    background-color: dodgerblue;
+    background-color: #5267df;
     padding: 20px;
     border-radius: 5px;
     border: 0px;
@@ -19,9 +19,9 @@ button{
     font-weight: bold;
 }
 
-.btn_not_selected{
-    background-color:ghostwhite;
-    color: grey;
+button:disabled{
+    background-color:#f7f7f7;
+    color: #ababb2;
 }
 
 nav{
@@ -50,6 +50,7 @@ main section{
     flex-direction: column;
 }
 .features_list > h3{
+    display: flexbox;
     border-color: grey;
     border-top: 1px;
     border-bottom: 1px;
