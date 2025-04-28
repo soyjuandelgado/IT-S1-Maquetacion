@@ -58,6 +58,13 @@ main section{
 .preguntas{
     text-align: left;
 }
+.cabecera_pregunta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:baseline;
+
+}
 .pregunta p{
     display: none;
 }
