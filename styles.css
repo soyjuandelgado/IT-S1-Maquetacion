@@ -15,12 +15,20 @@ button{
     border-radius: 5px;
     border: 0px;
     color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.btn_not_selected{
+    background-color:ghostwhite;
+    color: grey;
 }
 
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 20px;
 }
 
@@ -41,6 +49,11 @@ main section{
     display: flex;
     flex-direction: column;
 }
+.features_list > h3{
+    border-color: grey;
+    border-top: 1px;
+    border-bottom: 1px;
+}
 .preguntas{
     text-align: left;
 }
@@ -54,6 +67,11 @@ main section{
     border: 1px;
     box-shadow: 0 4px 12px rgb(190, 190, 190);
     border-radius: 15px;
+}
+
+.puntos{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer{
