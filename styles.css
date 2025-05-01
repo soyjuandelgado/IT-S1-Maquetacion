@@ -1,28 +1,48 @@
+:root {
+    --color-fondo: #ffffff;
+    --color-titulos: #2c304c;
+    --color-parrafo: #b9b8bd;
+    --color-fondo-boton-activo: #5267df;
+    --color-letra-boton-activo: #ffffff;
+    --color-fondo-boton-inactivo: #f7f7f7;
+    --color-letra-boton-inactivo: #666671;
+    --color-imagen-fondo: #5063d7;
+    --color-letra-pestana-activa: #414255;
+    --color-letra-pestana-inactiva: #999aa0;
+    --color-linea-pestana: #f5f4f7;
+    --color-sombra-tarjeta: #f9fafc;
+    --color-titulo-hamburguesa: #737383;
+    --color-fondo-formulario: #5266df;    
+    --color-letra-formulario: #f8fbff;
+    --color-boton-contacto: #fb5859;
+    --color-fondo-pie: #242946;
+}
+
 body{
     max-width: 1200px;
     margin: auto;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #242948;
+    color: var(--color-titulos);
     /*background-color: blue;*/
 }
 p{
-    color: #97979f;
+    color: var(--color-parrafo);
 }
 
 button{
-    background-color: #5267df;
+    background-color: var(--color-fondo-boton-activo);
     padding: 20px;
     border-radius: 5px;
     border: 0px;
-    color: white;
+    color: var(--color-letra-boton-activo);
     font-size: medium;
     font-weight: bold;
 }
 
 button:disabled{
-    background-color:#f7f7f7;
-    color: #ababb2;
+    background-color:var(--color-fondo-boton-inactivo);
+    color: var(--color-letra-boton-inactivo);
 }
 
 nav{
@@ -40,6 +60,7 @@ nav{
 
 main{
     text-align: center;
+    margin-bottom: 50px;
 }
 
 main section{
@@ -52,7 +73,7 @@ main section{
 }
 .features_list > h3{
     display: flexbox;
-    border-color: grey;
+    border-color: var(--color-linea-pestana);
     border-top: 1px;
     border-bottom: 1px;
 }
@@ -62,7 +83,7 @@ main section{
 
 .pregunta{
     border-bottom: 1px solid;
-    border-color: #242948;
+    border-color: var(--color-linea-pestana);
 }
 .cabecera_pregunta{
     display: flex;
@@ -71,15 +92,15 @@ main section{
     align-items:baseline;
 
 }
-.pregunta p{
-    /*display: none;*/
-}
+/*.pregunta p{
+    display: none;
+}*/
 
 .browser{
     margin: 20px;
     padding: 20px;
     border: 1px;
-    box-shadow: 0 4px 12px rgb(190, 190, 190);
+    box-shadow: 0 4px 12px var(--color-sombra-tarjeta);
     border-radius: 15px;
 }
 
@@ -93,4 +114,20 @@ footer{
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
+}
+
+.formulario{
+    background-color: var(--color-fondo-formulario);
+    color: var(--color-letra-formulario);
+}
+.formulario p{
+    color: var(--color-letra-formulario);
+}
+
+.enlaces{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-fondo-pie);
+    color: var(--color-letra-formulario);
 }
