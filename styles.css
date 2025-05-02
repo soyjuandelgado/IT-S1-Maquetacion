@@ -36,19 +36,20 @@ p{
     margin-block-start: 0;
     margin-block-end: 0;
 }
-
 h1{
     font-size: 2rem;
 }
-
 h2{
     font-size: 1.7rem;
 }
-
 h3{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
 }
-
+h4{
+    font-size: 1rem;
+}
 a{
     color: inherit;        /* Hereda el color del texto padre */
     text-decoration: none; /* Quita el subrayado */
@@ -63,22 +64,23 @@ a{
     font-size: 0.95rem;
     letter-spacing: 0.03rem;
 }
-
 .boton-estilo1{
     background-color: var(--color-fondo-boton-activo);
     color: var(--color-letra-boton-activo);
     box-shadow: 0 8px 10px -5px var(--color-sombra-tarjeta);
 }
-
 .boton-estilo2{
     background-color:var(--color-fondo-boton-inactivo);
     color: var(--color-letra-boton-inactivo);
     box-shadow: 0 8px 10px -5px var(--color-sombra-tarjeta);
 }
-
 .boton-estilo3{
     background-color: var(--color-fondo-boton-contacto);
     color: var(--color-letra-boton-activo);
+}
+.boton-ancho{
+    padding: 1.1rem;
+    width: 80%;
 }
 
 .button{
@@ -122,6 +124,7 @@ main section{
     position: relative;
     z-index: 1;
 }
+
 .fondo1{
     background-color: var(--color-imagen-fondo);
     position: absolute;
@@ -143,7 +146,6 @@ main section{
     border-end-end-radius: 30%;
     z-index: 0;
 }
-
 .fondo2-2{
     background-color: var(--color-imagen-fondo);
     position: absolute;
@@ -155,14 +157,14 @@ main section{
     border-end-end-radius: 30%;
     z-index: 0;
 }
+
 .contenido-info{
     padding: 9%;
 }
-
 .contenido-botones{
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
@@ -175,7 +177,6 @@ main section{
     padding-left: 2rem;
     padding-right: 2rem;
 }
-
 .tab-titulo{
     padding: 1.5rem;
     font-size: 1.2rem;
@@ -187,21 +188,19 @@ main section{
 .tab-titulo:first-child{
     border-top: 1px solid var(--color-linea-tab);
 }
-
 .tab-contenido{
     display: none;
 }
 .tab-contenido.activo{
     display: block;
 }
-
 .tab-titulo-activo{
     color: var(--color-letra-tab-activa);
 }
+
 .preguntas{
     text-align: left;
 }
-
 .pregunta{
     border-bottom: 1px solid;
     border-color: var(--color-linea-tab);
@@ -214,17 +213,25 @@ main section{
 
 }
 
-.browser{
-    margin: 20px;
-    padding: 20px;
-    border: 1px;
-    box-shadow: 0 4px 12px var(--color-sombra-tarjeta);
-    border-radius: 15px;
+.navegadores{
+    padding: 0;
+}
+.navegador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:1.2rem;
+    margin: 12%;
+    padding: 2.5rem 0 1.7rem;
+    border: 0;
+    box-shadow: 0 10px 15px -2px var(--color-sombra-tarjeta);
+    border-radius: 1rem;
 }
 
 .puntos{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
 }
 
 .caja-formulario{
