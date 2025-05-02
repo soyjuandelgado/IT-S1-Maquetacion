@@ -87,25 +87,7 @@ a{
     box-shadow: 0 8px 10px -5px var(--color-sombra-tarjeta);
     /* x, y, blur. spread, color*/
 }
-/*
-button{
-    background-color: var(--color-fondo-boton-activo);
-    padding: 1rem;
-    border-radius: 0.3rem;
-    border: 0;
-    color: var(--color-letra-boton-activo);
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 0.95rem;
-    letter-spacing: 0.03rem;
-    box-shadow: 0 8px 10px -5px var(--color-sombra-tarjeta);
-}
 
-button:disabled{
-    background-color:var(--color-fondo-boton-inactivo);
-    color: var(--color-letra-boton-inactivo);
-}
-*/
 nav{
     display: flex;
     flex-direction: row;
@@ -157,10 +139,22 @@ main section{
     right: 20%;
     width: 80%;
     height: 90%;
+    border-start-end-radius: 30%;
     border-end-end-radius: 30%;
     z-index: 0;
 }
 
+.fondo2-2{
+    background-color: var(--color-imagen-fondo);
+    position: absolute;
+    top: 19%;
+    right: 30%;
+    width: 80%;
+    height: 90%;
+    border-start-end-radius: 30%;
+    border-end-end-radius: 30%;
+    z-index: 0;
+}
 .contenido-info{
     padding: 9%;
 }
@@ -177,13 +171,13 @@ main section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
 .tab-titulo{
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 1.2rem;
     color: var(--color-letra-tab-inactiva);
     background-color: var(--color-fondo);
@@ -194,6 +188,12 @@ main section{
     border-top: 1px solid var(--color-linea-tab);
 }
 
+.tab-contenido{
+    display: none;
+}
+.tab-contenido.activo{
+    display: block;
+}
 
 .tab-titulo-activo{
     color: var(--color-letra-tab-activa);
@@ -213,9 +213,6 @@ main section{
     align-items:baseline;
 
 }
-/*.pregunta p{
-    display: none;
-}*/
 
 .browser{
     margin: 20px;
@@ -264,15 +261,6 @@ main section{
 .formulario input::placeholder{
     color: var(--color-letra-placeholder);
 }
-
-/*
-.formulario input[type="submit"]{
-    color:var(--color-letra-boton-activo);
-    background-color: var(--color-boton-contacto);
-}
-*/
-
-
 
 .enlaces{
     display: flex;
