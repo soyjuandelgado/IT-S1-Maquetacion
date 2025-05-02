@@ -7,15 +7,15 @@
     --color-fondo-boton-inactivo: #f7f7f7;
     --color-letra-boton-inactivo: #666671;
     --color-imagen-fondo: #5063d7;
-    --color-letra-pestana-activa: #414255;
-    --color-letra-pestana-inactiva: #999aa0;
-    --color-linea-pestana: #f5f4f7;
+    --color-letra-tab-activa: #414255;
+    --color-letra-tab-inactiva: #999aa0;
+    --color-linea-tab: #cccbcd;
     --color-sombra-tarjeta: #dbdbdb;
     --color-titulo-hamburguesa: #737383;
     --color-fondo-formulario: #5266df;    
     --color-letra-formulario: #f8fbff;
     --color-letra-placeholder: #e1e1e3;
-    --color-boton-contacto: #fb5859;
+    --color-fondo-boton-contacto: #fb5859;
     --color-fondo-pie: #242946;
     --padding-margenes: 8%;
 }
@@ -54,7 +54,7 @@ a{
     text-decoration: none; /* Quita el subrayado */
 }
 
-.formato-boton{
+.boton{
     padding: 1rem;
     border-radius: 0.3rem;
     border: 0;
@@ -64,6 +64,30 @@ a{
     letter-spacing: 0.03rem;
 }
 
+.boton-estilo1{
+    background-color: var(--color-fondo-boton-activo);
+    color: var(--color-letra-boton-activo);
+    box-shadow: 0 8px 10px -5px var(--color-sombra-tarjeta);
+}
+
+.boton-estilo2{
+    background-color:var(--color-fondo-boton-inactivo);
+    color: var(--color-letra-boton-inactivo);
+    box-shadow: 0 8px 10px -5px var(--color-sombra-tarjeta);
+}
+
+.boton-estilo3{
+    background-color: var(--color-fondo-boton-contacto);
+    color: var(--color-letra-boton-activo);
+}
+
+.button{
+    background-color: var(--color-fondo-boton-activo);
+    color: var(--color-letra-boton-activo);
+    box-shadow: 0 8px 10px -5px var(--color-sombra-tarjeta);
+    /* x, y, blur. spread, color*/
+}
+/*
 button{
     background-color: var(--color-fondo-boton-activo);
     padding: 1rem;
@@ -75,14 +99,13 @@ button{
     font-size: 0.95rem;
     letter-spacing: 0.03rem;
     box-shadow: 0 8px 10px -5px var(--color-sombra-tarjeta);
-    /* x, y, blur. spread, color*/
 }
 
 button:disabled{
     background-color:var(--color-fondo-boton-inactivo);
     color: var(--color-letra-boton-inactivo);
 }
-
+*/
 nav{
     display: flex;
     flex-direction: row;
@@ -150,15 +173,30 @@ main section{
     padding-right: 2.5%;
 }
 
-.features_list{
+.tabs{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-.features_list > h3{
-    display: flexbox;
-    border-color: var(--color-linea-pestana);
-    border-top: 1px;
-    border-bottom: 1px;
+
+.tab-titulo{
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-letra-tab-inactiva);
+    background-color: var(--color-fondo);
+    border: none;
+    border-bottom: 1px solid var(--color-linea-tab);
+}
+.tab-titulo:first-child{
+    border-top: 1px solid var(--color-linea-tab);
+}
+
+
+.tab-titulo-activo{
+    color: var(--color-letra-tab-activa);
 }
 .preguntas{
     text-align: left;
@@ -166,7 +204,7 @@ main section{
 
 .pregunta{
     border-bottom: 1px solid;
-    border-color: var(--color-linea-pestana);
+    border-color: var(--color-linea-tab);
 }
 .cabecera_pregunta{
     display: flex;
@@ -226,10 +264,13 @@ main section{
 .formulario input::placeholder{
     color: var(--color-letra-placeholder);
 }
+
+/*
 .formulario input[type="submit"]{
     color:var(--color-letra-boton-activo);
     background-color: var(--color-boton-contacto);
 }
+*/
 
 
 
