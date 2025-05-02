@@ -56,13 +56,14 @@ a{
 }
 
 .boton{
-    padding: 1rem;
+    padding: 1.1rem;
     border-radius: 0.3rem;
     border: 0;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 0.95rem;
+    font-size: 0.90rem;
     letter-spacing: 0.03rem;
+    min-width: 40%;
 }
 .boton-estilo1{
     background-color: var(--color-fondo-boton-activo);
@@ -79,7 +80,6 @@ a{
     color: var(--color-letra-boton-activo);
 }
 .boton-ancho{
-    padding: 1.1rem;
     width: 80%;
 }
 
@@ -200,6 +200,7 @@ main section{
 
 .preguntas{
     text-align: left;
+    padding: 3rem 0;
 }
 .pregunta{
     border-bottom: 1px solid;
@@ -209,8 +210,7 @@ main section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:baseline;
-
+    align-items: baseline;
 }
 
 .navegadores{
