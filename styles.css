@@ -14,6 +14,7 @@
     --color-titulo-hamburguesa: #737383;
     --color-fondo-formulario: #5266df;    
     --color-letra-formulario: #f8fbff;
+    --color-letra-placeholder: #e1e1e3;
     --color-boton-contacto: #fb5859;
     --color-fondo-pie: #242946;
     --padding-margenes: 8%;
@@ -26,6 +27,7 @@ body{
     font-size: 16px;
     color: var(--color-titulos);
     /*background-color: blue;*/
+    
 }
 p{
     color: var(--color-parrafo);
@@ -45,6 +47,21 @@ h2{
 
 h3{
     font-size: 1.2rem;
+}
+
+a{
+    color: inherit;        /* Hereda el color del texto padre */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.formato-boton{
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.95rem;
+    letter-spacing: 0.03rem;
 }
 
 button{
@@ -175,24 +192,20 @@ main section{
     padding-bottom: 20px;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content:space-around;
-    align-content: stretch;
-}
-
 .caja-formulario{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     background-color: var(--color-fondo-formulario);
     color: var(--color-letra-formulario);
-    padding: var(--padding-margenes);
+
+    padding: 5rem var(--padding-margenes);
+    gap: 0.5rem;
 }
 .caja-formulario h2{
     text-align: center;
+    font-weight: normal;
 }
 .caja-formulario p{
     color: var(--color-letra-formulario);
@@ -202,13 +215,24 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    gap: 1rem;;
 }
 
 .formulario input{
-    flex-grow: 1;
-    flex-basis: 100%;
-
+    box-sizing: border-box;
+    width: 100%;
 }
+
+.formulario input::placeholder{
+    color: var(--color-letra-placeholder);
+}
+.formulario input[type="submit"]{
+    color:var(--color-letra-boton-activo);
+    background-color: var(--color-boton-contacto);
+}
+
+
 
 .enlaces{
     display: flex;
