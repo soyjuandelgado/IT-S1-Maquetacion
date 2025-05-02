@@ -71,7 +71,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 1.5rem;
     padding: var(--padding-margenes);
 }
 
@@ -82,12 +82,13 @@ nav{
 
 main{
     text-align: center;
-    margin-bottom: 50px;
+    padding-bottom: 3.5rem;
 
 }
 
 main section{
-    margin-top: 50px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .contenido-img{
@@ -180,7 +181,6 @@ footer{
     flex-wrap: nowrap;
     justify-content:space-around;
     align-content: stretch;
-    margin: 0px;
 }
 
 .caja-formulario{
@@ -217,17 +217,29 @@ footer{
     align-items: center;
     background-color: var(--color-fondo-pie);
     color: var(--color-letra-formulario);
-    gap: 10px;
+    padding: 1.5rem;
 }
 
 .paginas{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .pagina{
-    flex-basis:auto;
+    flex-basis: auto;
     text-align: center;
+    padding: 1.5rem;;
+}
+
+.social_media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 3rem;
+    padding: 1.5rem;
+}
+.social_media img{
+    height: 100%;
 }
