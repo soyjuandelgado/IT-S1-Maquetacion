@@ -169,7 +169,7 @@ main section{
     padding-right: 2.5%;
 }
 
-.tabs-radios{
+.contenedor-tabs > input[type="radio"]{
     display: none;
 }
 .tabs{
@@ -197,21 +197,27 @@ main section{
     width:46%;
     padding-top: 0.25rem;
 }
-.linea-seleccionado-activo{
-    border-color: red;
-    background-color: red;
-}
 .tab-titulo:first-child{
     border-top: 1px solid var(--color-linea-tab);
 }
 .tab-contenido{
     display: none;
 }
-.tab-contenido.activo{
-    display: block;
-}
-.tab-titulo-activo{
+#tab-bookmarking:checked ~ .tabs label[for="tab-bookmarking"],
+#tab-searching:checked ~ .tabs label[for="tab-searching"],
+#tab-sharing:checked ~ .tabs label[for="tab-sharing"]{
     color: var(--color-letra-tab-activa);
+}
+#tab-bookmarking:checked ~ .tabs label[for="tab-bookmarking"] > hr,
+#tab-searching:checked ~ .tabs label[for="tab-searching"] > hr,
+#tab-sharing:checked ~ .tabs label[for="tab-sharing"] > hr{
+    border-color: var(--color-fondo-boton-contacto);
+    background-color: var(--color-fondo-boton-contacto);
+}
+#tab-bookmarking:checked ~ #tab-bookmarking-cont,
+#tab-searching:checked ~ #tab-searching-cont,
+#tab-sharing:checked ~ #tab-sharing-cont{
+    display: block;
 }
 
 .preguntas{

@@ -33,31 +33,26 @@
                 <button class="boton boton-estilo2">Get it on Firefox</button>
             </div>
         </section>
-        <section>
+        <section class="contenedor-tabs">
             <div class="contenido-info">
                 <h2>Features</h2>
                 <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
             </div>
-            <div class="tabs-radios">
-                <input type="radio" name="features" id="tab-bookmarking" checked>
-                <input type="radio" name="features" id="tab-searching">
-                <input type="radio" name="features" id="tab-sharing">
-            </div>
+            <input type="radio" name="features" id="tab-bookmarking" checked>
+            <input type="radio" name="features" id="tab-searching">
+            <input type="radio" name="features" id="tab-sharing">
             <div class="tabs">
-                <label for="tab-bookmarking" class="tab-titulo tab-titulo-activo">
-                    Simple Bookmarking
-                    <hr class="linea-seleccionado linea-seleccionado-activo"/>
+                <label for="tab-bookmarking" class="tab-titulo">Simple Bookmarking
+                    <hr class="linea-seleccionado"/>
                 </label>
-                <button class="tab-titulo">
-                    Speedy Searching
+                <label for="tab-searching" class="tab-titulo">Speedy Searching
                     <hr class="linea-seleccionado"/>
-                </button>
-                <button class="tab-titulo">
-                    Easy Sharing
+                </label>
+                <label for="tab-sharing" class="tab-titulo">Easy Sharing
                     <hr class="linea-seleccionado"/>
-                </button>
+                </label>
             </div>
-            <div class="tab-contenido activo">
+            <div class="tab-contenido" id="tab-bookmarking-cont">
                 <div class="contenido-img">
                     <img class ="imagen" src="img/illustration-features-tab-1.svg" alt="" width="85%">
                     <div class = "fondo2"></div>
@@ -67,7 +62,7 @@
                     <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
                 </div>
             </div>
-            <div class="tab-contenido">
+            <div class="tab-contenido" id="tab-searching-cont">
                 <div class="contenido-img">
                     <img class ="imagen" src="img/illustration-features-tab-2.svg" alt="" width="85%">
                     <div class = "fondo2-2"></div>
@@ -77,7 +72,7 @@
                     <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
                 </div>
             </div>
-            <div class="tab-contenido">
+            <div class="tab-contenido" id="tab-sharing-cont">
                 <div class="contenido-img">
                     <img class ="imagen" src="img/illustration-features-tab-3.svg" alt="" width="85%">
                     <div class = "fondo2"></div>
