@@ -212,6 +212,9 @@ main section{
     justify-content: space-between;
     align-items: baseline;
 }
+.pregunta[open] img {
+    transform: rotate(180deg);
+}
 
 .navegadores{
     padding: 0;
@@ -227,6 +230,14 @@ main section{
     border: 0;
     box-shadow: 0 10px 15px -2px var(--color-sombra-tarjeta);
     border-radius: 1rem;
+}
+
+.navegador > img{
+    width: 40%;
+}
+
+.navegador > div > img{
+    width: 100%;
 }
 
 .puntos{
