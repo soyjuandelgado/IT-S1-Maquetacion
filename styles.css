@@ -169,6 +169,9 @@ main section{
     padding-right: 2.5%;
 }
 
+.tabs-radios{
+    display: none;
+}
 .tabs{
     display: flex;
     flex-direction: column;
@@ -178,12 +181,25 @@ main section{
     padding-right: 2rem;
 }
 .tab-titulo{
-    padding: 1.5rem;
+    padding-top: 1.2rem;
     font-size: 1.2rem;
     color: var(--color-letra-tab-inactiva);
     background-color: var(--color-fondo);
     border: none;
     border-bottom: 1px solid var(--color-linea-tab);
+}
+.linea-seleccionado{
+    align-self: center;
+    margin: 0 27%;
+    margin-top: 1rem;
+    border: 0;
+    background-color: transparent;
+    width:46%;
+    padding-top: 0.25rem;
+}
+.linea-seleccionado-activo{
+    border-color: red;
+    background-color: red;
 }
 .tab-titulo:first-child{
     border-top: 1px solid var(--color-linea-tab);
@@ -214,6 +230,7 @@ main section{
 }
 .pregunta[open] img {
     transform: rotate(180deg);
+    filter: invert(21%) sepia(97%) saturate(7486%) hue-rotate(356deg) brightness(90%) contrast(120%);
 }
 
 .navegadores{
@@ -261,6 +278,8 @@ main section{
 }
 .caja-formulario p{
     color: var(--color-letra-formulario);
+    text-align: center;
+    letter-spacing: 0.2rem;
 }
 
 .formulario{

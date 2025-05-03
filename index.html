@@ -9,12 +9,12 @@
 </head>
 <body>
     <nav>        
-        <img src="img/logo-bookmark.svg" alt="Logo Bookmark"/>
+        <a href="#"><img src="img/logo-bookmark.svg" alt="Logo Bookmark"/></a>
         <img src="img/icon-hamburger.svg" alt="menu" height="100%"/>
         <div class="menu">
-            <a>FEATURES</a>
-            <a>PRICING</a>
-            <a>CONTACT</a>
+            <a href="#">FEATURES</a>
+            <a href="#">PRICING</a>
+            <a href="#">CONTACT</a>
             <button class="boton boton-estilo3">LOGIN</button>
         </div>
     </nav>
@@ -38,10 +38,24 @@
                 <h2>Features</h2>
                 <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
             </div>
+            <div class="tabs-radios">
+                <input type="radio" name="features" id="tab-bookmarking" checked>
+                <input type="radio" name="features" id="tab-searching">
+                <input type="radio" name="features" id="tab-sharing">
+            </div>
             <div class="tabs">
-                <button class="tab-titulo tab-titulo-activo">Simple Bookmarking</butto>
-                <button class="tab-titulo">Speedy Searching</b>
-                <button class="tab-titulo">Easy Sharing</button>
+                <label for="tab-bookmarking" class="tab-titulo tab-titulo-activo">
+                    Simple Bookmarking
+                    <hr class="linea-seleccionado linea-seleccionado-activo"/>
+                </label>
+                <button class="tab-titulo">
+                    Speedy Searching
+                    <hr class="linea-seleccionado"/>
+                </button>
+                <button class="tab-titulo">
+                    Easy Sharing
+                    <hr class="linea-seleccionado"/>
+                </button>
             </div>
             <div class="tab-contenido activo">
                 <div class="contenido-img">
@@ -152,16 +166,18 @@
     </main>
     <footer>
         <div class="caja-formulario">
-            <p>35,000+ ALREADY JOINED</p>
-            <h2>Stay up-to-date with what we're doing</h2>
+            <div>
+                <p>35,000+ ALREADY JOINED</p>
+                <h2>Stay up-to-date with what we're doing</h2>
+            </div>
             <form class="formulario">
-                <input class="boton" type="email" id="email" placeholder="Enter your email address"/>
+                <input class="boton" type="email" id="email" placeholder="Enter your email address" required/>
                 <input class="boton boton-estilo3" type="submit" value="Contact Us">
             </form>
         </div>
         <div class="enlaces">
             <div class="paginas">
-                <div class="pagina"><img src="img/logo-bookmark-white.svg"></div>
+                <div class="pagina"><a href="#"><img src="img/logo-bookmark-white.svg"></a></div>
                 <div class="pagina"><a href="#">FEATURES</a></div>
                 <div class="pagina"><a href="#">PRICING</a></div>
                 <div class="pagina"><a href="#">CONTACT</a></div>
