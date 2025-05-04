@@ -106,6 +106,9 @@ nav{
 .check-menu:checked ~ .menu-movil{
     display: flex;
 }
+body:has(#menu-visible:checked) {
+    overflow: hidden;
+}
 .menu-movil{
     position:absolute;
     top:0;
