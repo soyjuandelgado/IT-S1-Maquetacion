@@ -128,7 +128,7 @@ body:has(#menu-visible:checked) {
 }
 .menu-movil{
     position:absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 90%;
     height: 95%;
@@ -414,6 +414,20 @@ main section{
 .navegadores{
     padding: 0;
 }
+
+@media (min-width: 481px) {
+    .navegadores{
+        display: flex;
+        flex-direction: column;
+    }
+    .tarjetas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5%;
+    }
+    
+}
 .navegador{
     display: flex;
     flex-direction: column;
@@ -427,6 +441,23 @@ main section{
     border-radius: 1rem;
 }
 
+@media (min-width: 481px) {
+    .navegador{
+        margin: 2%;
+    }
+    .chrome{
+        margin-bottom: 10%;
+        align-self: flex-start;
+    }
+    .firefox{
+        align-self: center;
+    }
+    .opera{
+        align-self: flex-end;
+        margin-top: 10%;
+    }
+    
+}
 .navegador > img{
     width: 40%;
 }
@@ -477,8 +508,14 @@ main section{
 @media (min-width: 481px) {
     .formulario{
         flex-direction: row;
-
     }
+    .email{
+        flex-basis: 60%;
+    }
+    .submit{
+        flex-basis: 30%;
+    }
+
 }
 
 .formulario input{
