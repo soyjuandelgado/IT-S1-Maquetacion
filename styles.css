@@ -454,12 +454,25 @@ main section{
     letter-spacing: 0.2rem;
 }
 
+@media (min-width: 481px) {
+    .caja-formulario{
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+}
 .formulario{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     gap: 1rem;;
+}
+
+@media (min-width: 481px) {
+    .formulario{
+        flex-direction: row;
+
+    }
 }
 
 .formulario input{
@@ -485,6 +498,11 @@ main section{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+@media (min-width: 481px) {
+    .paginas{
+        flex-direction: row;
+    }
 }
 
 .pagina{
