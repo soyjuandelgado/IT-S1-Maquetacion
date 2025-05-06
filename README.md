@@ -14,4 +14,3 @@ Página web responsive con visualización en web y móvil.
 ## Demo
 
     [Demo en vivo](https://soyjuandelgado.github.io/IT-S1-Maquetacion/)
-  
