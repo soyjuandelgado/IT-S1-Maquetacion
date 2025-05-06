@@ -76,6 +76,12 @@ a{
     letter-spacing: 0.03rem;
     min-width: 40%;
 }
+
+@media (min-width: 481px) {
+    .boton{
+        min-width: 20%;
+    }
+}
 .boton-estilo1{
     background-color: var(--color-fondo-boton-activo);
     color: var(--color-letra-boton-activo);
@@ -492,6 +498,14 @@ main section{
     background-color: var(--color-fondo-pie);
     color: var(--color-letra-formulario);
     padding: 1.5rem;
+}
+
+@media (min-width: 481px) {
+    .enlaces{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .paginas{
