@@ -31,15 +31,14 @@ body{
     font-size: 16px;
     color: var(--color-titulos);
 }
-
-@media (min-width: var(--min-width-web)){
+@media (min-width: 481px){
     body{
         max-width: 1200px;
     }
 }
-@media (max-width: var(--max-width-movil)){
+@media (max-width: 480px){
     body{
-        max-width: var(--max-width-movil);
+        max-width: 480px;
     }
 }
 p{
@@ -79,7 +78,7 @@ a{
     min-width: 40%;
 }
 
-@media (min-width: var(--min-width-web)) {
+@media (min-width: 481px) {
     .boton{
         min-width: 20%;
     }
@@ -187,7 +186,7 @@ body:has(#menu-visible:checked) {
     display: none;
     flex-direction: row;
 }
-@media (min-width: var(--min-width-web)){
+@media (min-width: 481px){
     nav label[for="menu-visible"]{
         display: none;
     }
@@ -208,19 +207,6 @@ main{
 main section{
     padding-top: 3rem;
     padding-bottom: 3rem;
-}
-
-@media (min-width: var(--min-width-web)){
-    .contenido{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .contenido-img{
-        width: 50%;
-    }
-    .contenido-info-botones{
-        width: 50%;
-    }
 }
 
 .contenido-img{
@@ -269,10 +255,10 @@ main section{
 .contenido-info{
     padding: 9%;
 }
-@media (min-width: var(--min-width-web)){
+@media (min-width: 481px){
     .contenido-info{
         padding: 0 27%;
-    }
+   }
 }
 .contenido-botones{
     display: flex;
@@ -280,6 +266,23 @@ main section{
     justify-content: space-evenly;
     padding-left: 2.5%;
     padding-right: 2.5%;
+}
+
+@media (min-width: 481px){
+    .contenido{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .contenido .contenido-img{
+        width: 50%;
+    }
+    .contenido .contenido-info-botones{
+        width: 50%;
+    }
+    .contenido .contenido-info-botones .contenido-info{
+        text-align: left;
+        padding: 9% 16%;
+    }
 }
 
 .contenedor-tabs > input[type="radio"]{
@@ -303,7 +306,7 @@ main section{
     border-bottom: 1px solid var(--color-linea-tab);
 }
 
-@media (min-width: var(--min-width-web)){
+@media (min-width: 481px){
     .tabs{
         flex-direction: row;
         justify-content: space-between;
@@ -324,7 +327,7 @@ main section{
     width:46%;
     padding-top: 0.25rem;
 }
-@media (min-width: var(--min-width-web)){
+@media (min-width: 481px){
     .linea-seleccionado{
         width: 100%;
         margin-left:0;
@@ -332,7 +335,7 @@ main section{
     }
 }
 
-@media (max-width: var(--max-width-movil)){
+@media (max-width: 480px){
     .tab-titulo:first-child{
         border-top: 1px solid var(--color-linea-tab);
     }
@@ -341,12 +344,12 @@ main section{
     display: none;
 }
 
-@media (max-width: var(--max-width-movil)){
+@media (max-width: 480px){
     .tab-contenido > .contenido-info > button{
         display: none;
     }
 }
-@media (min-width: var(--min-width-web)){
+@media (min-width: 481px){
     .tab-contenido{
         flex-direction: row;
         justify-content: space-between;
@@ -379,14 +382,14 @@ main section{
 }
 
     
-@media (max-width: var(--max-width-movil)) {
+@media (max-width: 480px) {
     #tab-bookmarking:checked ~ #tab-bookmarking-cont,
     #tab-searching:checked ~ #tab-searching-cont,
     #tab-sharing:checked ~ #tab-sharing-cont{
         display: block;
     }
 }
-@media (min-width: var(--min-width-web)) {
+@media (min-width: 481px) {
     #tab-bookmarking:checked ~ #tab-bookmarking-cont,
     #tab-searching:checked ~ #tab-searching-cont,
     #tab-sharing:checked ~ #tab-sharing-cont{
@@ -417,7 +420,7 @@ main section{
     padding: 0;
 }
 
-@media (min-width: var(--min-width-web)) {
+@media (min-width: 481px) {
     .navegadores{
         display: flex;
         flex-direction: column;
@@ -443,7 +446,7 @@ main section{
     border-radius: 1rem;
 }
 
-@media (min-width: var(--min-width-web)) {
+@media (min-width: 481px) {
     .navegador{
         margin: 2%;
     }
@@ -493,7 +496,7 @@ main section{
     letter-spacing: 0.2rem;
 }
 
-@media (min-width: var(--min-width-web)) {
+@media (min-width: 481px) {
     .caja-formulario{
         padding-left: 35%;
         padding-right: 35%;
@@ -507,7 +510,7 @@ main section{
     gap: 1rem;;
 }
 
-@media (min-width: var(--min-width-web)) {
+@media (min-width: 481px) {
     .formulario{
         flex-direction: row;
     }
@@ -539,7 +542,7 @@ main section{
     padding: 1.5rem;
 }
 
-@media (min-width: var(--min-width-web)) {
+@media (min-width: 481px) {
     .enlaces{
         display: flex;
         flex-direction: row;
@@ -552,7 +555,7 @@ main section{
     flex-direction: column;
     align-items: center;
 }
-@media (min-width: var(--min-width-web)) {
+@media (min-width: 481px) {
     .paginas{
         flex-direction: row;
     }
