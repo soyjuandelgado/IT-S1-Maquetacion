@@ -20,6 +20,8 @@
     --color-fondo-boton-contacto: #fb5859;
     --color-fondo-pie: #242946;
     --padding-margenes: 8%;
+    --min-width-web: 481px;
+    --max-width-movil: 480px;
 }
 
 body{
@@ -30,14 +32,14 @@ body{
     color: var(--color-titulos);
 }
 
-@media (min-width: 481px){
+@media (min-width: var(--min-width-web)){
     body{
         max-width: 1200px;
     }
 }
-@media (max-width: 480px){
+@media (max-width: var(--max-width-movil)){
     body{
-        max-width: 480px;
+        max-width: var(--max-width-movil);
     }
 }
 p{
@@ -77,7 +79,7 @@ a{
     min-width: 40%;
 }
 
-@media (min-width: 481px) {
+@media (min-width: var(--min-width-web)) {
     .boton{
         min-width: 20%;
     }
@@ -185,7 +187,7 @@ body:has(#menu-visible:checked) {
     display: none;
     flex-direction: row;
 }
-@media (min-width: 481px){
+@media (min-width: var(--min-width-web)){
     nav label[for="menu-visible"]{
         display: none;
     }
@@ -208,7 +210,7 @@ main section{
     padding-bottom: 3rem;
 }
 
-@media (min-width: 481px){
+@media (min-width: var(--min-width-web)){
     .contenido{
         display: flex;
         flex-direction: row-reverse;
@@ -267,7 +269,7 @@ main section{
 .contenido-info{
     padding: 9%;
 }
-@media (min-width: 481px){
+@media (min-width: var(--min-width-web)){
     .contenido-info{
         padding: 0 27%;
     }
@@ -301,7 +303,7 @@ main section{
     border-bottom: 1px solid var(--color-linea-tab);
 }
 
-@media (min-width: 481px){
+@media (min-width: var(--min-width-web)){
     .tabs{
         flex-direction: row;
         justify-content: space-between;
@@ -322,7 +324,7 @@ main section{
     width:46%;
     padding-top: 0.25rem;
 }
-@media (min-width: 481px){
+@media (min-width: var(--min-width-web)){
     .linea-seleccionado{
         width: 100%;
         margin-left:0;
@@ -330,7 +332,7 @@ main section{
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: var(--max-width-movil)){
     .tab-titulo:first-child{
         border-top: 1px solid var(--color-linea-tab);
     }
@@ -339,12 +341,12 @@ main section{
     display: none;
 }
 
-@media (max-width: 480px){
+@media (max-width: var(--max-width-movil)){
     .tab-contenido > .contenido-info > button{
         display: none;
     }
 }
-@media (min-width: 481px){
+@media (min-width: var(--min-width-web)){
     .tab-contenido{
         flex-direction: row;
         justify-content: space-between;
@@ -377,14 +379,14 @@ main section{
 }
 
     
-@media (max-width: 480px) {
+@media (max-width: var(--max-width-movil)) {
     #tab-bookmarking:checked ~ #tab-bookmarking-cont,
     #tab-searching:checked ~ #tab-searching-cont,
     #tab-sharing:checked ~ #tab-sharing-cont{
         display: block;
     }
 }
-@media (min-width: 481px) {
+@media (min-width: var(--min-width-web)) {
     #tab-bookmarking:checked ~ #tab-bookmarking-cont,
     #tab-searching:checked ~ #tab-searching-cont,
     #tab-sharing:checked ~ #tab-sharing-cont{
@@ -415,7 +417,7 @@ main section{
     padding: 0;
 }
 
-@media (min-width: 481px) {
+@media (min-width: var(--min-width-web)) {
     .navegadores{
         display: flex;
         flex-direction: column;
@@ -441,7 +443,7 @@ main section{
     border-radius: 1rem;
 }
 
-@media (min-width: 481px) {
+@media (min-width: var(--min-width-web)) {
     .navegador{
         margin: 2%;
     }
@@ -491,7 +493,7 @@ main section{
     letter-spacing: 0.2rem;
 }
 
-@media (min-width: 481px) {
+@media (min-width: var(--min-width-web)) {
     .caja-formulario{
         padding-left: 35%;
         padding-right: 35%;
@@ -505,7 +507,7 @@ main section{
     gap: 1rem;;
 }
 
-@media (min-width: 481px) {
+@media (min-width: var(--min-width-web)) {
     .formulario{
         flex-direction: row;
     }
@@ -537,7 +539,7 @@ main section{
     padding: 1.5rem;
 }
 
-@media (min-width: 481px) {
+@media (min-width: var(--min-width-web)) {
     .enlaces{
         display: flex;
         flex-direction: row;
@@ -550,7 +552,7 @@ main section{
     flex-direction: column;
     align-items: center;
 }
-@media (min-width: 481px) {
+@media (min-width: var(--min-width-web)) {
     .paginas{
         flex-direction: row;
     }
