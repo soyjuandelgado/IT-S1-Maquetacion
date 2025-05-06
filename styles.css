@@ -261,6 +261,11 @@ main section{
 .contenido-info{
     padding: 9%;
 }
+@media (min-width: 481px){
+    .contenido-info{
+        padding: 0 27%;
+    }
+}
 .contenido-botones{
     display: flex;
     flex-direction: row;
@@ -271,11 +276,6 @@ main section{
 
 .contenedor-tabs > input[type="radio"]{
     display: none;
-}
-@media (min-width: 481px){
-    .contenedor-tabs > .contenido-info{
-        padding: 0 25%;
-    }
 }
 
 .tabs{
@@ -332,6 +332,12 @@ main section{
 .tab-contenido{
     display: none;
 }
+
+@media (max-width: 480px){
+    .tab-contenido > .contenido-info > button{
+        display: none;
+    }
+}
 @media (min-width: 481px){
     .tab-contenido{
         flex-direction: row;
@@ -341,9 +347,15 @@ main section{
     .tab-contenido > .contenido-img,
     .tab-contenido > .contenido-info{
         width: 50%;
+        padding: 2%;
     }
     .tab-contenido > .contenido-info{
         text-align: left;
+        padding: 8%;
+    }
+    .tab-contenido > .contenido-info > button{
+        margin-top: 10%;
+        display: block;
     }
 }
 #tab-bookmarking:checked ~ .tabs label[for="tab-bookmarking"],
