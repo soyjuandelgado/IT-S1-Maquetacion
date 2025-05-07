@@ -8,6 +8,8 @@ Página web responsive con visualización en web y móvil.
 
 - HTML  
 - CSS
+- Bootstrap
+- SASS
 
 ## 📋Requisitos
 
