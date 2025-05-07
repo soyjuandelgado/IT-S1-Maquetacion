@@ -1,16 +1,32 @@
 # IT-S1.1-HTML-CSS-Flex
 
+## 📄Descripción
+
 Página web responsive con visualización en web y móvil.
 
-## Tecnologías  
+## 💻Tecnologías Utilitzadas
 
 - HTML  
-- CSS  
+- CSS
 
-## Instrucciones  
+## 📋Requisitos
 
-1. Visitar la direccion de la web.  
+Navegador web.
 
-## Demo
+## 🛠️Instalación
 
-    [Demo en vivo](https://soyjuandelgado.github.io/IT-S1-Maquetacion/)
+No es necesaria.
+
+## ▶️Execució
+
+1. Visitar la direccion de la web.
+
+[Demo en vivo](https://soyjuandelgado.github.io/IT-S1-Maquetacion/)
+
+## 🌐Desplegament
+
+No aplica.
+
+## 🤝Contribucions
+
+No aplica.
