@@ -20,8 +20,6 @@
     --color-fondo-boton-contacto: #fb5859;
     --color-fondo-pie: #242946;
     --padding-margenes: 8%;
-    --min-width-web: 481px;
-    --max-width-movil: 480px;
 }
 
 body{
