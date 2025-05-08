@@ -19,16 +19,16 @@ Navegador web.
 
 No es necesaria.
 
-## ▶️Execució
+## ▶️Ejecución
 
 1. Visitar la direccion de la web.
 
 [Demo en vivo](https://soyjuandelgado.github.io/IT-S1-Maquetacion/)
 
-## 🌐Desplegament
+## 🌐Despliegue
 
 No aplica.
 
-## 🤝Contribucions
+## 🤝Contribuciones
 
 No aplica.
