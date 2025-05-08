@@ -17,13 +17,13 @@ Navegador web.
 
 No es necesaria.
 
-## ▶️Execució
+## ▶️Execución
 
 1. Visitar la direccion de la web.
 
 [Demo en vivo](https://soyjuandelgado.github.io/IT-S1-Maquetacion/)
 
-## 🌐Desplegament
+## 🌐Despliegue
 
 No aplica.
 
