@@ -17,7 +17,7 @@ Navegador web.
 
 No es necesaria.
 
-## ▶️Execución
+## ▶️Ejecución
 
 1. Visitar la direccion de la web.
 
