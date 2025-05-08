@@ -29,6 +29,10 @@ body{
 p{
     color: var(--color-parrafo);
 }
+a{
+    color: inherit;        /* Hereda el color del texto padre */
+    text-decoration: none; /* Quita el subrayado */
+}
 
 .relativo{
     position: relative;
