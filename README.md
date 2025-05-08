@@ -27,6 +27,6 @@ No es necesaria.
 
 No aplica.
 
-## 🤝Contribucions
+## 🤝Contribuciones
 
 No aplica.
