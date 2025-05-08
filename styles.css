@@ -65,6 +65,10 @@ a{
     text-decoration: none; /* Quita el subrayado */
 }
 
+.clicable{
+    cursor: pointer;
+}
+
 .boton{
     padding: 1.1rem;
     border-radius: 0.3rem;
@@ -74,6 +78,7 @@ a{
     font-size: 0.90rem;
     letter-spacing: 0.03rem;
     min-width: 40%;
+    cursor: pointer;
 }
 
 @media (min-width: 931px) {
@@ -173,6 +178,7 @@ body:has(#menu-visible:checked) {
     border: none;
     border-top: 1px solid var(--color-linea-menu-movil);
     padding: 1rem 0;
+    cursor: pointer;
 }
 .menu-movil-elemento-login{
     margin-top: 1rem;
