@@ -44,4 +44,14 @@ a {
   border-end-end-radius: 30%;
 }
 
+.caja-formulario {
+  background-color: #5266df;
+  color: #f8fbff;
+}
+
+.caja-pie {
+  background-color: #242946;
+  color: #f8fbff;
+}
+
 /*# sourceMappingURL=styles_bootstrap.css.map */
