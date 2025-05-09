@@ -36,28 +36,30 @@ a{
     position: relative;
 }
 .imagen{
+    
     position: relative;
     z-index: 1;
 }
 
-.fondo1{
+%fondo {
     background-color: $color-imagen-fondo;
     position: absolute;
+    z-index: 0;
+}
+.fondo1{
+    @extend %fondo;
     top: 25%;
     left: 20%;
     width: 80%;
     height: 75%;
     border-end-start-radius: 30%;
-    z-index: 0;
 }
 .fondo2{
-    background-color: $color-imagen-fondo;
-    position: absolute;
+    @extend %fondo;
     top: 19%;
     right: 20%;
     width: 80%;
     height: 90%;
     border-start-end-radius: 30%;
     border-end-end-radius: 30%;
-    z-index: 0;
 }
