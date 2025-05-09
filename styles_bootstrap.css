@@ -1,65 +1,47 @@
-:root {
-    --color-fondo: #ffffff;
-    --color-titulos: #2c304c;
-    --color-parrafo: #b9b8bd;
-    --color-fondo-menu-movil: #242946f5;
-    --color-linea-menu-movil: #474d6cf5;
-    --color-fondo-boton-activo: #5267df;
-    --color-letra-boton-activo: #ffffff;
-    --color-fondo-boton-inactivo: #f7f7f7;
-    --color-letra-boton-inactivo: #666671;
-    --color-imagen-fondo: #5063d7;
-    --color-letra-tab-activa: #414255;
-    --color-letra-tab-inactiva: #999aa0;
-    --color-linea-tab: #cccbcd;
-    --color-sombra-tarjeta: #dbdbdb;
-    --color-titulo-hamburguesa: #737383;
-    --color-fondo-formulario: #5266df;    
-    --color-letra-formulario: #f8fbff;
-    --color-letra-placeholder: #e1e1e3;
-    --color-fondo-boton-contacto: #fb5859;
-    --color-fondo-pie: #242946;
-    --padding-margenes: 8%;
+body {
+  margin: auto;
+  color: #2c304c;
 }
 
-body{
-    margin: auto;
-    color: var(--color-titulos);
-}
-p{
-    color: var(--color-parrafo);
-}
-a{
-    color: inherit;        /* Hereda el color del texto padre */
-    text-decoration: none; /* Quita el subrayado */
+p {
+  color: #b9b8bd;
 }
 
-.relativo{
-    position: relative;
-}
-.imagen{
-    position: relative;
-    z-index: 1;
+a {
+  color: inherit; /* Hereda el color del texto padre */
+  text-decoration: none; /* Quita el subrayado */
 }
 
-.fondo1{
-    background-color: var(--color-imagen-fondo);
-    position: absolute;
-    top: 25%;
-    left: 20%;
-    width: 80%;
-    height: 75%;
-    border-end-start-radius: 30%;
-    z-index: 0;
+.relativo {
+  position: relative;
 }
-.fondo2{
-    background-color: var(--color-imagen-fondo);
-    position: absolute;
-    top: 19%;
-    right: 20%;
-    width: 80%;
-    height: 90%;
-    border-start-end-radius: 30%;
-    border-end-end-radius: 30%;
-    z-index: 0;
+
+.imagen {
+  position: relative;
+  z-index: 1;
 }
+
+.fondo1 {
+  background-color: #5063d7;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  width: 80%;
+  height: 75%;
+  border-end-start-radius: 30%;
+  z-index: 0;
+}
+
+.fondo2 {
+  background-color: #5063d7;
+  position: absolute;
+  top: 19%;
+  right: 20%;
+  width: 80%;
+  height: 90%;
+  border-start-end-radius: 30%;
+  border-end-end-radius: 30%;
+  z-index: 0;
+}
+
+/*# sourceMappingURL=styles_bootstrap.css.map */
