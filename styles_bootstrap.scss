@@ -87,6 +87,11 @@ a{
     border-start-end-radius: 30%;
     border-end-end-radius: 30%;
 }
+/*
+#tabs .nav-link.active {
+  border-bottom: 3px solid red !important;
+}
+*/
 .caja-formulario{
     background-color: $color-fondo-formulario;
     color: $color-letra-formulario;
