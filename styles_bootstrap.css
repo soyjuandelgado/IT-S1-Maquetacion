@@ -67,6 +67,19 @@ a {
   border-end-end-radius: 30%;
 }
 
+#tab-bookmarking,
+#tab-searching,
+#tab-sharing {
+  color: #999aa0;
+}
+
+#tab-bookmarking.active,
+#tab-searching.active,
+#tab-sharing.active {
+  color: #414255;
+  border-bottom: 3px solid red !important;
+}
+
 .caja-formulario {
   background-color: #5266df;
   color: #f8fbff;
@@ -82,7 +95,5 @@ a {
   background-color: #242946;
   color: #f8fbff;
 }
-
-
 
 /*# sourceMappingURL=styles_bootstrap.css.map */

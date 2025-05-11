@@ -87,11 +87,19 @@ a{
     border-start-end-radius: 30%;
     border-end-end-radius: 30%;
 }
-/*
-#tabs .nav-link.active {
+
+#tab-bookmarking,
+#tab-searching,
+#tab-sharing {
+    color: $color-letra-tab-inactiva;
+}
+#tab-bookmarking.active,
+#tab-searching.active,
+#tab-sharing.active {
+  color: $color-letra-tab-activa;
   border-bottom: 3px solid red !important;
 }
-*/
+
 .caja-formulario{
     background-color: $color-fondo-formulario;
     color: $color-letra-formulario;
