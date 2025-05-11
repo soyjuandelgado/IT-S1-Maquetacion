@@ -84,6 +84,10 @@ a {
   width: 80%;
 }
 
+.enlace:hover {
+  color: #fb5859 !important;
+}
+
 .relativo {
   position: relative;
 }

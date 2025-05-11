@@ -101,6 +101,10 @@ a{
     width: 80%;
 }
 
+.enlace:hover{
+    color: $color-fondo-boton-contacto !important;
+}
+
 .relativo{
     position: relative;
 }
