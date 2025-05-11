@@ -171,3 +171,7 @@ a{
     background-color: $color-fondo-pie;
     color: $color-letra-formulario;
 }
+
+.enlace-redes img:hover {
+    filter: brightness(0) saturate(100%) invert(28%) sepia(99%) saturate(7491%) hue-rotate(-1deg) brightness(102%) contrast(108%);
+}
