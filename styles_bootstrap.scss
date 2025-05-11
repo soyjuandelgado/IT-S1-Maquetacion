@@ -56,6 +56,35 @@ a{
     letter-spacing: 0.1rem;
 }
 
+.boton{
+    min-width: 20%;
+    padding: 0.9rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    cursor: pointer;
+}
+.boton-estilo1{
+    @extend .boton;
+    background-color: $color-fondo-boton-activo;
+    color: $color-letra-boton-activo;
+}
+.boton-estilo2{
+    @extend .boton;
+    background-color:$color-fondo-boton-inactivo;
+    color: $color-letra-boton-inactivo;
+}
+.boton-estilo3{
+    @extend .boton;
+    background-color: $color-fondo-boton-contacto;
+    color: $color-letra-boton-activo;
+}
+.boton-ancho{
+    width: 80%;
+}
+
 .relativo{
     position: relative;
 }
@@ -109,6 +138,11 @@ a{
     letter-spacing: 0.3rem;
     font-weight: 600;
 }
+
+.formulario input::placeholder{
+    color: $color-letra-placeholder;
+}
+
 .caja-pie{
     background-color: $color-fondo-pie;
     color: $color-letra-formulario;

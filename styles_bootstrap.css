@@ -35,6 +35,36 @@ a {
   letter-spacing: 0.1rem;
 }
 
+.boton, .boton-estilo3, .boton-estilo2, .boton-estilo1 {
+  min-width: 20%;
+  padding: 0.9rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  cursor: pointer;
+}
+
+.boton-estilo1 {
+  background-color: #5267df;
+  color: #ffffff;
+}
+
+.boton-estilo2 {
+  background-color: #f7f7f7;
+  color: #666671;
+}
+
+.boton-estilo3 {
+  background-color: #fb5859;
+  color: #ffffff;
+}
+
+.boton-ancho {
+  width: 80%;
+}
+
 .relativo {
   position: relative;
 }
@@ -89,6 +119,10 @@ a {
   color: #f8fbff;
   letter-spacing: 0.3rem;
   font-weight: 600;
+}
+
+.formulario input::placeholder {
+  color: #e1e1e3;
 }
 
 .caja-pie {
