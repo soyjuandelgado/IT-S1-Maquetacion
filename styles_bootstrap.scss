@@ -72,15 +72,30 @@ a{
     background-color: $color-fondo-boton-activo;
     color: $color-letra-boton-activo;
 }
+.boton-estilo1:hover{
+    background-color: $color-letra-boton-activo;
+    color: $color-fondo-boton-activo;
+    border: 1px solid $color-fondo-boton-activo;
+}
 .boton-estilo2{
     @extend .boton;
     background-color:$color-fondo-boton-inactivo;
     color: $color-letra-boton-inactivo;
 }
+.boton-estilo2:hover{
+    background-color: $color-fondo-boton-inactivo;
+    color: black;
+    border: 1px solid black;
+}
 .boton-estilo3{
     @extend .boton;
     background-color: $color-fondo-boton-contacto;
     color: $color-letra-boton-activo;
+}
+.boton-estilo3:hover{
+    background-color: $color-letra-boton-activo;
+    color: $color-fondo-boton-contacto;
+    border: 1px solid $color-fondo-boton-contacto;
 }
 .boton-ancho{
     width: 80%;

@@ -52,14 +52,32 @@ a {
   color: #ffffff;
 }
 
+.boton-estilo1:hover {
+  background-color: #ffffff;
+  color: #5267df;
+  border: 1px solid #5267df;
+}
+
 .boton-estilo2 {
   background-color: #f7f7f7;
   color: #666671;
 }
 
+.boton-estilo2:hover {
+  background-color: #f7f7f7;
+  color: black;
+  border: 1px solid black;
+}
+
 .boton-estilo3 {
   background-color: #fb5859;
   color: #ffffff;
+}
+
+.boton-estilo3:hover {
+  background-color: #ffffff;
+  color: #fb5859;
+  border: 1px solid #fb5859;
 }
 
 .boton-ancho {
