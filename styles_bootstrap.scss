@@ -149,6 +149,10 @@ a{
   border-bottom: 3px solid red !important;
 }
 
+.accordion-button:not(.collapsed) {
+  background-color: transparent; /* o el color que prefieras */
+}
+
 .caja-formulario{
     background-color: $color-fondo-formulario;
     color: $color-letra-formulario;

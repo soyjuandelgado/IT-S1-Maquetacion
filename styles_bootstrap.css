@@ -133,6 +133,10 @@ a {
   border-bottom: 3px solid red !important;
 }
 
+.accordion-button:not(.collapsed) {
+  background-color: transparent; /* o el color que prefieras */
+}
+
 .caja-formulario {
   background-color: #5266df;
   color: #f8fbff;
