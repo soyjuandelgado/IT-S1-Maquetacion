@@ -17,7 +17,11 @@ Navegador web.
 
 ## 🛠️Instalación
 
-No es necesaria.
+Instalar los paquetes necesarios para el ejecucion: bootstrap y sass.
+
+```bash
+npm install
+```
 
 ## ▶️Ejecución
 
