@@ -27,7 +27,7 @@ npm install
 
 1. Visitar la direccion de la web.
 
-[Demo en vivo](https://soyjuandelgado.github.io/IT-S1-Maquetacion/)
+[Demo en vivo](https://soyjuandelgado.github.io/IT-S1-Maquetacion/index_bootstrap.html)
 
 ## 🌐Despliegue
 

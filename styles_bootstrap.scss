@@ -114,6 +114,11 @@ a{
     z-index: 1;
 }
 
+.navbar-toggler {
+  border: none;         /* Quita el borde */
+  box-shadow: none;     /* Quita el contorno al hacer clic */
+}
+
 %fondo {
     background-color: $color-imagen-fondo;
     position: absolute;

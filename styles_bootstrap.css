@@ -97,6 +97,11 @@ a {
   z-index: 1;
 }
 
+.navbar-toggler {
+  border: none; /* Quita el borde */
+  box-shadow: none; /* Quita el contorno al hacer clic */
+}
+
 .fondo2, .fondo1 {
   background-color: #5063d7;
   position: absolute;
