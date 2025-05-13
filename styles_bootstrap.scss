@@ -152,6 +152,13 @@ a{
 .accordion-button:not(.collapsed) {
   background-color: transparent; /* o el color que prefieras */
 }
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(98%) saturate(7491%) hue-rotate(357deg) brightness(96%) contrast(110%);
+}
+
+.titulo-faq {
+    font-size: 1.2rem;
+}
 
 .caja-formulario{
     background-color: $color-fondo-formulario;
